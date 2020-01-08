@@ -45,11 +45,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Notifications</a>
           </li>
-          <li class="nav-item">
-            {% if user.is_authenticated %}
-            <a class="nav-link " href="{% url 'profile' %}">Profile</a>
-            {% endif %}
-          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input
@@ -65,6 +60,7 @@
       </div>
       <div class="navbar-nav">
         {% if user.is_authenticated %}
+        <a class="nav-link " href="{% url 'profile' %}">Profile</a>
         <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
         {% else %}
         <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>

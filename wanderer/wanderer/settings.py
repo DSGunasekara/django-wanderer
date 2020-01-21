@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'wanderer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wanderer',
-        'USER': 'postgres',
-        'PASSWORD': 'adsg1997#@',
+        'NAME': 'dev_database',
+        'USER': 'dilain',
+        'PASSWORD': 'db97#@',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
